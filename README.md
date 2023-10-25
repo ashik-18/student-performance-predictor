@@ -1,1 +1,1 @@
-# student-performance-predictor
+# student-performance-predictor ML project
