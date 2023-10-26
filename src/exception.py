@@ -1,5 +1,5 @@
 import sys
-import logger
+from logger import logging
 
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()
@@ -23,7 +23,8 @@ class CustomException(Exception):
 if __name__ == "__main__":
 
     try:
-        a = 1/0
+        a = 1/1
+        logging.info("loggin exception now")
     except Exception as e:
         logging.info("loggin exception now")
         raise CustomException(e)
